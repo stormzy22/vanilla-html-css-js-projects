@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img src="./icons8-cursor-64.png" alt="" id="img" />
+    <h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quae
+      neque atque, modi adipisci est laboriosam aliquam aut iure sapiente hic
+      nesciunt fuga totam, molestias nihil, eligendi nobis. Quo, culpa. Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. At blanditiis saepe,
+      suscipit delectus esse aspernatur fuga, quasi commodi deserunt provident
+      rerum eligendi reprehenderit harum deleniti facere, nobis nulla ipsa hic?
+    </h1>
+    <script>
+      let img = document.getElementById("img");
+
+      window.onmousemove = (e) => {
+        x = e.pageX;
+        y = e.pageY;
+        img.style.display = "inline";
+        img.style.left = x + "px";
+        img.style.top = y + "px";
+        console.log(x * y);
+      };
+    </script>
+  </body>
+</html>
+
+<!-- <script>
+      let container = document.getElementById("container");
+      window.onmousemove = function (e) {
+        let x = -e.clientX / 5,
+          y = -e.clientY / 5;
+
+        container.style.backgroundPositionX = x + "px";
+        container.style.backgroundPositionY = y + "px";
+      };
+      let img = document.getElementById("img");
+      window.onmousemove = function (e) {
+        x = -e.clientX / 10;
+        y = -e.clientY / 10;
+        img.style.top = x + "px";
+        img.style.left = y + "px";
+      };
+    </script> -->
